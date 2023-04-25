@@ -1,0 +1,287 @@
+/* CSS Reset */
+body, header, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Navigation */
+.navbar{
+    background: #E74C7D;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: -5px 5px 5px #000;
+    border-radius: 0px 0px 25px 25px;
+} 
+.navbar .logo-container{
+    flex: 1;
+    margin-right: 20px;
+} 
+.navbar img{
+    max-width: 300px;
+    height: auto;
+} 
+.navbar nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}  
+.navbar nav ul li{
+    margin-right: 20px;
+} 
+.navbar nav ul li:last-child{
+    margin-right: 0;
+}   
+.navbar nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+.navbar nav ul li a:hover{
+    color: #ff98ba;
+    text-shadow: -1px 1px 0 #62198B,
+    -2px 2px 0 #2d0338;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-links li{
+    margin-left: 20px;
+}
+  
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navLink li a{
+    font-family: 'Alkatra', cursive;
+}
+
+/* Universal */
+body{
+    background: linear-gradient(#1e1e1e,#0c0c0c);
+    background-repeat: no-repeat;
+}
+h1, h2, h3{
+    color: #E74C7D;
+    font-family: 'Alkatra', cursive;
+}
+p{
+    font-family: 'Mukta', sans-serif;
+}
+                        /* index */
+/* Carousel */
+.carouselContainer{
+    position: relative;
+    width: 100%;
+    height:calc(100vh - 120px); 
+    overflow: hidden;
+}
+.carouselSlide{
+    display: flex;
+    width: 500%;
+    height: 100%;
+} 
+.carouselSlide img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.7) grayscale(50%);
+}  
+.logoContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+} 
+.logoContainer img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    display: inline-block;
+    pointer-events: none;
+}
+.logoContainer p{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Main */
+.introMain{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+}
+#profile{
+    width: 500px;
+    border-radius: 25px;
+
+}
+.introContainer{
+    flex-grow: 1;
+    font-size: larger;
+}    
+.content{
+    background-color: #ff98ba;
+    border-radius: 0px 0px 25px 25px;
+    padding: 10px;
+}
+
+/* Favorite */
+.imageSizes{
+    width: 300px;
+    border-radius: 25px;
+}
+.cardHolder{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: #ff98ba;
+    box-shadow: -5px 5px 5px #000;
+    border-radius: 25px;
+    padding: 5px;
+}
+.favorite{
+    text-align: center;
+}
+.favoriteSection{
+    background-color: #111111;
+    padding: 20px;
+}
+
+/* Contact */
+#chibi{
+    width: 150px;
+}
+.Contact{
+    background: #0c0c0c;
+    padding: 20px;
+}
+.contactsub{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+.content2{
+    background-color: #ff98ba;
+    border-radius: 0px 0px 25px 25px;
+    padding: 10px;
+}
+.Contact h2{
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+    background: #E74C7D;
+    padding: 20px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Media */
